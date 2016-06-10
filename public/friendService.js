@@ -3,7 +3,10 @@ angular.module('userProfiles')
   return {
     
     login: function( user ) {
-      /* FIX ME */
+     return $http({
+       method: 'POST',
+       url: 'http://localhost:3000/api/login'
+     })
     },
 
     getFriends: function() {
